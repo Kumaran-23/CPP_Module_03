@@ -6,12 +6,12 @@
 /*   By: snair <snair@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/03 15:18:19 by snair             #+#    #+#             */
-/*   Updated: 2022/12/03 15:18:20 by snair            ###   ########.fr       */
+/*   Updated: 2022/12/03 16:29:31 by snair            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ScavTRAP_HPP
-# define ScavTRAP_HPP
+#ifndef SCAVTRAP_HPP
+# define SCAVTRAP_HPP
 
 # include "ClapTrap.hpp"
 
