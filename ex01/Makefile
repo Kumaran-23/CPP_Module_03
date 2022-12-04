@@ -3,7 +3,7 @@ SRC = ClapTrap.cpp ScavTrap.cpp main.cpp
 HEADER = ClapTrap.hpp ScavTrap.hpp
 OBJ = $(SRC:.cpp=.o)
 CC = c++
-FLAGS = -Wall -Werror -Wextra -std=c++98 -fsanitize=address -pedantic
+FLAGS = -Wall -Werror -Wextra -std=c++98 -fsanitize=address
 
 GREEN		=	\033[1;92m
 YELLOW		=	\033[1;93m

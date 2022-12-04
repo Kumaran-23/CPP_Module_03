@@ -6,7 +6,7 @@
 /*   By: snair <snair@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/03 15:18:10 by snair             #+#    #+#             */
-/*   Updated: 2022/12/03 15:18:11 by snair            ###   ########.fr       */
+/*   Updated: 2022/12/04 13:27:50 by snair            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ScavTrap::ScavTrap()
 {
 	std::cout << "ScavTrap Constructor called" << std::endl;
-	this->_name = "";
+	this->_name = "default";
 	this->_hp = 100;
 	this->_ep = 50;
 	this->_ad = 20;

@@ -6,7 +6,7 @@
 /*   By: snair <snair@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 19:45:45 by snair             #+#    #+#             */
-/*   Updated: 2022/12/02 15:01:07 by snair            ###   ########.fr       */
+/*   Updated: 2022/12/04 13:27:48 by snair            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ClapTrap::ClapTrap()
 {
 	std::cout << "ClapTrap Constructor called" << std::endl;
-	this->_name = "";
+	this->_name = "default";
 	this->_hp = 10;
 	this->_ep = 10;
 	this->_ad = 0;

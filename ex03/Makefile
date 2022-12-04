@@ -1,6 +1,6 @@
-NAME = fragTrap
-SRC = ClapTrap.cpp ScavTrap.cpp FragTrap.cpp main.cpp
-HEADER = ClapTrap.hpp ScavTrap.hpp FragTrap.hpp
+NAME = diamondTrap
+SRC = ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp main.cpp
+HEADER = ClapTrap.hpp ScavTrap.hpp FragTrap.hpp DiamondTrap.hpp
 OBJ = $(SRC:.cpp=.o)
 CC = c++
 FLAGS = -Wall -Werror -Wextra -std=c++98 -fsanitize=address
