@@ -6,7 +6,7 @@
 /*   By: snair <snair@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/04 16:45:04 by snair             #+#    #+#             */
-/*   Updated: 2022/12/04 16:45:06 by snair            ###   ########.fr       */
+/*   Updated: 2022/12/16 15:31:44 by snair            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ DiamondTrap::DiamondTrap()
 }
 
 //Parameterized contructor to initialize name
-DiamondTrap::DiamondTrap(const std::string &name)
+DiamondTrap::DiamondTrap(const std::string &name) : ClapTrap(name + "_clap_name")
 {
 	std::cout << "DiamondTrap Name Constructor called" << std::endl;
 	this->_name = name;
-	ClapTrap::_name = name + "_clap_name";
+	//ClapTrap::_name = name + "_clap_name";
 	this->_hp = FragTrap::_hp;
 	this->_ep = ScavTrap::_ep;
 	this->_ad = FragTrap::_ad; 
@@ -51,6 +51,7 @@ replaces the contents of existing objects*/
 DiamondTrap	&DiamondTrap::operator=(const DiamondTrap &diamond)
 {
 	this->_name = diamond._name;
+	ClapTrap::_name = diamond._name + "_clap_name";
 	this->_hp = diamond._hp;
 	this->_ep = diamond._ep;
 	this->_ad = diamond._ad;

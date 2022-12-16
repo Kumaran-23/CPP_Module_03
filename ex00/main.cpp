@@ -6,7 +6,7 @@
 /*   By: snair <snair@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 19:45:55 by snair             #+#    #+#             */
-/*   Updated: 2022/12/01 19:45:56 by snair            ###   ########.fr       */
+/*   Updated: 2022/12/16 13:33:23 by snair            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int main (void)
 	dimple.status();
 	mob.status();
 	dimple.attack("Reigen");
+	//dimple.attack(mob);
 	dimple.takeDamage(4);
 	dimple.beRepaired(3);
 	dimple.status();
@@ -34,6 +35,7 @@ int main (void)
 	bom.status();
 	mob.status();
 	bom.attack("Reigen");
+	//bom.attack(dimple);
 	bom.takeDamage(4);
 	bom.beRepaired(10);
 	bom.takeDamage(20);

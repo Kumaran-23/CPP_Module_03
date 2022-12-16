@@ -6,7 +6,7 @@
 /*   By: snair <snair@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/03 16:27:38 by snair             #+#    #+#             */
-/*   Updated: 2022/12/04 13:21:27 by snair            ###   ########.fr       */
+/*   Updated: 2022/12/16 14:10:16 by snair            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ FragTrap::FragTrap(const std::string &name)
 /*used to  initialize the data members of the class using another object of the same class
 copies the values of the data variables of one object of a class to the data member 
 of another object of the same class*/
-FragTrap::FragTrap(const FragTrap &frag)
+FragTrap::FragTrap(const FragTrap &frag) : ClapTrap()
 {
 	std::cout << "FragTrap Copy constructor called" << std::endl;
 	*this = frag;

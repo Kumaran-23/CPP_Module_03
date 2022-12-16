@@ -6,7 +6,7 @@
 /*   By: snair <snair@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 19:45:45 by snair             #+#    #+#             */
-/*   Updated: 2022/12/04 13:26:46 by snair            ###   ########.fr       */
+/*   Updated: 2022/12/16 13:40:07 by snair            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,6 @@ ClapTrap::ClapTrap(const ClapTrap &clap)
 replaces the contents of existing objects*/
 ClapTrap	&ClapTrap::operator=(const ClapTrap &clap)
 {
-	std::cout << "Copy assignment operator called" << std::endl;
 	this->_name = clap._name;
 	this->_hp = clap._hp;
 	this->_ep = clap._ep;
@@ -74,7 +73,7 @@ int	ClapTrap::getHp(void) const
 }
 
 //sets the name for _name
-void	ClapTrap::set_name(std::string const name)
+void	ClapTrap::set_name(std::string name)
 { 
 	this->_name = name; 
 }
@@ -114,6 +113,26 @@ void	ClapTrap::attack(const std::string &target)
 		this->_ep--;
 		std::cout << "Claptrap " << this->_name << " ep is now "
 			<< this->_ep << std::endl;
+	}
+	else
+		std::cout << "Claptrap " << this->_name << " has not enough energy to perform this action!" << std::endl;
+}
+
+void	ClapTrap::attack(ClapTrap &target)
+{
+	if (this->_hp == 0)
+	{
+		std::cout << "Claptrap " << this->_name << " is dead!" << std::endl;
+		return ;
+	}
+	else if (this->_ep > 0)
+	{
+		std::cout << "Claptrap " << this->_name << " attacks " << target.getName()
+			<< " causing " << this->_ad << " points of damage!" << std::endl;
+		this->_ep--;
+		std::cout << "Claptrap " << this->_name << " ep is now "
+			<< this->_ep << std::endl;
+		target.takeDamage(this->_ad);
 	}
 	else
 		std::cout << "Claptrap " << this->_name << " has not enough energy to perform this action!" << std::endl;

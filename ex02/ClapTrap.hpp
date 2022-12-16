@@ -6,7 +6,7 @@
 /*   By: snair <snair@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 19:45:36 by snair             #+#    #+#             */
-/*   Updated: 2022/12/03 16:27:12 by snair            ###   ########.fr       */
+/*   Updated: 2022/12/16 14:09:46 by snair            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,10 @@ class ClapTrap
 			int					getAd(void) const;
 			void 				status(void) const;
 	protected:
-			std::string	_name;
-			int			_hp;
-			int			_ep;
-			int			_ad;
+			std::string		_name;
+			unsigned int	_hp;
+			unsigned int	_ep;
+			unsigned int	_ad;
 };
 
 #endif

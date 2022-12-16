@@ -6,7 +6,7 @@
 /*   By: snair <snair@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 19:45:36 by snair             #+#    #+#             */
-/*   Updated: 2022/12/01 19:45:39 by snair            ###   ########.fr       */
+/*   Updated: 2022/12/16 13:29:50 by snair            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ class ClapTrap
 			~ClapTrap();
 			ClapTrap			&operator=(const ClapTrap &clap);
 			void				attack(const std::string &target);
+			void				attack(ClapTrap &target);
 			void				takeDamage(unsigned int value);
 			void				beRepaired(unsigned int value);
 			const std::string	&getName(void) const;
@@ -34,10 +35,10 @@ class ClapTrap
 			int					getAd(void) const;
 			void 				status(void) const;
 	private:
-			std::string	_name;
-			int			_hp;
-			int			_ep;
-			int			_ad;
+			std::string		_name;
+			unsigned int	_hp;
+			unsigned int	_ep;
+			unsigned int	_ad;
 };
 
 #endif

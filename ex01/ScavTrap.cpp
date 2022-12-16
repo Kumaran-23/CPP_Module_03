@@ -6,7 +6,7 @@
 /*   By: snair <snair@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/03 15:18:10 by snair             #+#    #+#             */
-/*   Updated: 2022/12/04 13:27:50 by snair            ###   ########.fr       */
+/*   Updated: 2022/12/16 13:53:09 by snair            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ ScavTrap::ScavTrap(const std::string &name)
 /*used to  initialize the data members of the class using another object of the same class
 copies the values of the data variables of one object of a class to the data member 
 of another object of the same class*/
-ScavTrap::ScavTrap(const ScavTrap &scav)
+ScavTrap::ScavTrap(const ScavTrap &scav) : ClapTrap()
 {
 	std::cout << "ScavTrap Copy constructor called" << std::endl;
 	*this = scav;

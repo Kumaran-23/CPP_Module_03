@@ -6,7 +6,7 @@
 /*   By: snair <snair@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 19:45:55 by snair             #+#    #+#             */
-/*   Updated: 2022/12/03 16:25:14 by snair            ###   ########.fr       */
+/*   Updated: 2022/12/16 14:13:23 by snair            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 int main (void)
 {
 	FragTrap mob("Mob");
-	ScavTrap bob("Bob");
 	mob.status();
+	ScavTrap bob("Bobby");
 	bob.status();
 	mob.attack("Reigen");
 	bob.attack("Reigen");
